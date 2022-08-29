@@ -17,14 +17,56 @@
     justify-content: center;
 }
 
-.intro-text-content h2 {
-    font-size: 6 rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
-
 .intro-img img {
     max-width: 100%;
     height: auto;
+}
+
+.top3-content {
+    max-width: 70rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: justify;
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: justify;
+    counter-reset: grid-counter;
+}
+
+.grid-main-heading {
+    margin-bottom: 1rem; 
+}
+
+.grid-description {
+   padding-bottom: 8 rem; 
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
 }
