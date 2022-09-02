@@ -89,3 +89,8 @@
 .gallary-img img:hover {
     transform: translate(-3%, -3%) scale(1.2) rotate(5deg);
 }
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
