@@ -80,6 +80,7 @@
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .gallary-img img {
@@ -160,4 +161,24 @@
 .footer p {
     margin: 0;
     padding: 3rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    .intro-content, .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallary-img {
+        width: 100%;
+    }
+
+    .gallary-img img {
+        width: 100%;
+    }
+
+    .grid-one-content {
+        display: block;
+    }
 }
